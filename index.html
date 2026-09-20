@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Flood & Shelter Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png" class="project-logo">
+        
+        <h1>🌊 IoT Flood & Shelter Monitoring</h1>
+        <p>Real-Time Disaster Monitoring System</p>
+        <p id="dateTime"></p>
+    </header>
+
+    <main class="dashboard">
+
+        <div class="card">
+            <h2>💧 Water Level</h2>
+            <p id="waterLevel">-- cm</p>
+            <span id="waterStatus">Waiting...</span>
+        </div>
+
+        <div class="card">
+            <h2>🌧️ Rain Sensor</h2>
+            <p id="rainStatus">--</p>
+        </div>
+
+        <div class="card">
+            <h2>🌊 Float Sensor</h2>
+            <p id="floatStatus">--</p>
+        </div>
+
+        <div class="card">
+            <h2>🔔 Alert Status</h2>
+            <p id="alertStatus">SYSTEM NORMAL</p>
+        </div>
+
+        <div class="card">
+            <h2>🏠 Shelter Occupancy</h2>
+            <p id="occupancy">-- / --</p>
+            <span>YOLO monitoring — later</span>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>ESP32 Based Flood Detection & Citizen Alert System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
